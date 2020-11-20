@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_icon_silhouette"
+            style="?attr/textcolorprimary"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@drawable/ic_money"
+            style="?attr/textcolorprimary"
+            android:title="@string/menu_business" />
+
+        <item
+            android:id="@+id/nav_technology"
+            android:icon="@drawable/ic_chip"
+            style="?attr/textcolorprimary"
+            android:title="@string/menu_technolgy" />
+        <item
+            android:id="@+id/nav_health"
+            android:icon="@drawable/ic_health"
+            android:title="@string/menu_health"
+            style="?attr/textcolorprimary"/>
+        <item
+            android:id="@+id/nav_science"
+            android:icon="@drawable/ic_dna"
+            style="?attr/textcolorprimary"
+            android:title="@string/menu_science" />
+        <item
+            android:id="@+id/nav_sports"
+            android:icon="@drawable/ic_football"
+            style="?attr/textcolorprimary"
+            android:title="@string/menu_sports" />
+        <item
+            android:id="@+id/nav_entertainment"
+            android:icon="@drawable/ic_video_camera"
+            style="?attr/textcolorprimary"
+            android:title="@string/menu_entertainment" />
+    </group>
+
+    <item android:title="Miscellaneous">
+        <menu>
+             <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                 style="?attr/textcolorprimary"
+                android:title="Settings"
+                />
+            <item
+                android:id="@+id/saved_pages"
+                style="?attr/textcolorprimary"
+                android:icon="@drawable/ic_small_rectangle_with_two_horizontal_lines_on_top"
+                android:title="Saved Pages"/>
+            <item
+                android:id="@+id/nav_share"
+                style="?attr/textcolorprimary"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_ratings"
+                style="?attr/textcolorprimary"
+                android:icon="@drawable/ic_rating"
+                android:title="@string/nav_rating"/>
+        </menu>
+    </item>
+
+</menu>

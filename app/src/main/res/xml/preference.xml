@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <PreferenceCategory
+        android:title="General"
+
+        >
+    <MultiSelectListPreference
+        android:key="sources"
+        android:title="Select Sources"
+        android:summary="Select from active sources."
+        android:entries="@array/sources_list"
+        android:entryValues="@array/sources_list_values"
+
+        />
+    <SwitchPreference
+        android:key="switch_mode"
+        android:title="Dark Mode"
+        android:summaryOff="Tap to change to Night Mode."
+        android:summaryOn="Tap to change to Day Mode."
+        />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Downloads"
+
+        >
+    <Preference
+        android:key="cache_clear"
+        android:title="Clear Cache"
+        android:summary="Clear the cache to save device storage."
+
+        />
+    </PreferenceCategory>
+</PreferenceScreen>

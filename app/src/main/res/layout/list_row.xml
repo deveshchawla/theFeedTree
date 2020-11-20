@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:layout_weight="7"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmer_layout"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/galleryImage"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="190dp"
+
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000"
+            android:shadowRadius="1.0"
+            android:textSize="17sp"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:padding="4dp"
+            android:paddingBottom="0dp"
+            android:hint=""/>
+
+        <TextView
+            android:id="@+id/sdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:minLines="2"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:hint=""/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/author"
+                    android:textSize="15sp"
+                    android:textColor="#42A5F5"
+
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:gravity="right"
+                android:textSize="14sp"
+                android:textColor="#42A5F5"
+                android:padding="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
